@@ -16,6 +16,9 @@ nav{
     gap: 40px;
 
 }
+.menu-desk a:hover{
+    color: #ff3946;
+}
 .menu-desk a{
     text-decoration: none;
     color: #3165b4;
@@ -78,3 +81,85 @@ nav{
     font-weight: bold;
 }
 
+#menu-desk, .menu-mobile, .close{
+    display: none;
+}
+
+
+@media (max-width:767px){
+
+    nav{
+        justify-content: space-evenly;
+        position: relative ;
+        margin: unset;
+    }
+    .logo-doob{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+    .logo-doob img{
+        margin-right: 10px;
+    }
+    .menu-desk a{
+        font-size: larger;
+    }
+    .menu-desk{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background:#fa999f;
+        transition: 1s ease;
+    }
+    .menu-desk div{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .close{
+       position: absolute;
+       top: 10px;
+       left: 10px;
+        
+        display: block;
+        font-size: 30px;
+
+    }
+    
+    
+    #menu-desk:checked+ .menu-desk{
+        left: 0;
+
+    }
+    .spirit-img{
+        flex-direction: column;
+    }
+    .spirit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .digital{
+        width: 70%;
+        text-align: center;
+    }
+    .button-m-t{
+        flex-direction: column;
+    }
+    .img1 img{
+        width: 400px;
+    }
+    
+}
