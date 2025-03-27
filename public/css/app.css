@@ -1,32 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-nav{
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
     margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15vw;
 }
-.menu-desk{
+
+.menu-desk {
     display: flex;
     gap: 40px;
 
 }
-.menu-desk a:hover{
+
+.menu-desk a:hover {
     color: #ff3946;
 }
-.menu-desk a{
+
+.menu-desk a {
     text-decoration: none;
     color: #3165b4;
     font-weight: bold;
     font-size: 15px;
 
 }
-.button-us button{
+
+.button-us button {
     border: none;
     border-radius: 3px;
     height: 40px;
@@ -34,16 +45,19 @@ nav{
     color: #ff3946;
     font-weight: bold;
     background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 10px;
 }
-.spirit-img{
+
+.spirit-img {
     margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5vw;
 }
-.spirit, .digital{
+
+.spirit,
+.digital {
     display: flex;
     flex-direction: column;
     gap: 3vh;
@@ -51,28 +65,33 @@ nav{
 
 
 }
-.digital h1{
+
+.digital h1 {
     color: #3165b4;
     font-size: 50px;
 }
-.digital p{
+
+.digital p {
     color: gray;
 }
-.button-m-t{
+
+.button-m-t {
     display: flex;
     gap: 3vw;
 }
-.more button{
+
+.more button {
     border-radius: 20px;
     border: none;
     height: 40px;
     width: 150px;
-    background:#ff3946;
+    background: #ff3946;
     color: white;
     font-weight: bold;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-.touch button{
+
+.touch button {
     border: 1px solid white;
     height: 40px;
     width: 150px;
@@ -81,19 +100,23 @@ nav{
     font-weight: bold;
 }
 
-#menu-desk, .menu-mobile, .close{
+#menu-desk,
+.menu-mobile,
+.close {
     display: none;
 }
+
 /* AHMED's part */
 .sarticle {
-    padding-top: 100px;
     display: flex;
-    justify-content: center;
+    padding: 100px;
     gap: 35px;
 }
 
 
-/* first section */
+/* 
+    first section 
+*/
 .sarticle .head {
     width: 250px;
     line-height: 1.3;
@@ -106,7 +129,7 @@ nav{
 
 .sarticle .head button {
     border: none;
-    background:#ff3946;
+    background: #ff3946;
     color: white;
     font-weight: bold;
     font-size: 10px;
@@ -115,7 +138,9 @@ nav{
 }
 
 
-/* second section */
+/* 
+    second section
+*/
 .sarticle .body {
     display: flex;
     justify-content: center;
@@ -138,27 +163,87 @@ nav{
     padding-bottom: 10px;
 }
 
+/* tharticle */
+.tharticle {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
-@media (max-width:767px){
+.tharticle section h3 {
+    color: #ff3946;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 13px;
+}
 
-    nav{
+.tharticle section p {
+    color: #2C4181;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tharticle form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.tharticle form div {
+    display: flex;
+    gap: 25px;
+}
+
+input,
+textarea {
+    border: none;
+    background-color: rgb(205, 229, 245);
+    color: #5A497A;
+    font-size: 10px;
+    padding: 15px 425px 15px 10px;
+}
+
+textarea {
+    border: none;
+    background-color: rgb(205, 229, 245);
+    color: #5A497A;
+    font-size: 10px;
+}
+
+.tharticle button {
+    border: none;
+    background: #ff3946;
+    color: white;
+    font-weight: bold;
+    padding: 15px 0px 15px 0px;
+    border-radius: 20px;
+    width: 150px;
+    margin-left: 500px;
+}
+
+@media (max-width:767px) {
+    nav {
         justify-content: space-evenly;
-        position: relative ;
+        position: relative;
         margin: unset;
     }
-    .logo-doob{
+
+    .logo-doob {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 5vw;
     }
-    .logo-doob img{
+
+    .logo-doob img {
         margin-right: 10px;
     }
-    .menu-desk a{
+
+    .menu-desk a {
         font-size: larger;
     }
-    .menu-desk{
+
+    .menu-desk {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -168,52 +253,54 @@ nav{
         left: -100%;
         width: 100%;
         height: 100vh;
-        background:#fa999f;
+        background: #fa999f;
         transition: 1s ease;
     }
-    .menu-desk div{
+
+    .menu-desk div {
         display: flex;
         justify-content: space-between;
         width: 100%;
 
     }
-    .menu-mobile{
+
+    .menu-mobile {
         display: block;
     }
-    .close{
-       position: absolute;
-       top: 10px;
-       left: 10px;
-        
+
+    .close {
+        position: absolute;
+        top: 10px;
+        left: 10px;
         display: block;
         font-size: 30px;
-
     }
-    
-    
-    #menu-desk:checked+ .menu-desk{
+
+    #menu-desk:checked+.menu-desk {
         left: 0;
-
     }
-    .spirit-img{
+
+    .spirit-img {
         flex-direction: column;
     }
-    .spirit{
+
+    .spirit {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
     }
-    .digital{
+
+    .digital {
         width: 70%;
         text-align: center;
     }
-    .button-m-t{
+
+    .button-m-t {
         flex-direction: column;
     }
-    .img1 img{
+
+    .img1 img {
         width: 400px;
     }
-    
 }
-
