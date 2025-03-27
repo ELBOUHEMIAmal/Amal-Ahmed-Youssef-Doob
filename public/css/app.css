@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
+}
+.menu-desk{
+    display: flex;
+    gap: 40px;
+
+}
+.menu-desk a{
+    text-decoration: none;
+    color: #3165b4;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.button-us button{
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 150px;
+    color: #ff3946;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+}
+.spirit-img{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+.spirit, .digital{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    width: 30vw;
+
+
+}
+.digital h1{
+    color: #3165b4;
+    font-size: 50px;
+}
+.digital p{
+    color: gray;
+}
+.button-m-t{
+    display: flex;
+    gap: 3vw;
+}
+.more button{
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    width: 150px;
+    background:#ff3946;
+    color: white;
+    font-weight: bold;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.touch button{
+    border: 1px solid white;
+    height: 40px;
+    width: 150px;
+    background: none;
+    color: #3165b4;
+    font-weight: bold;
+}
+
