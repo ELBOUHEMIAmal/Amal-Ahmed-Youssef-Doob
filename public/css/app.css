@@ -1,29 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-nav{
+
+nav {
     margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15vw;
 }
-.menu-desk{
+
+.menu-desk {
     display: flex;
     gap: 40px;
 
 }
-.menu-desk a{
+
+.menu-desk a {
     text-decoration: none;
     color: #3165b4;
     font-weight: bold;
     font-size: 15px;
 
 }
-.button-us button{
+
+.button-us button {
     border: none;
     border-radius: 3px;
     height: 40px;
@@ -31,45 +35,51 @@ nav{
     color: #ff3946;
     font-weight: bold;
     background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.spirit-img{
+
+.spirit-img {
     margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5vw;
 }
-.spirit, .digital{
+
+.spirit,
+.digital {
     display: flex;
     flex-direction: column;
     gap: 3vh;
     width: 30vw;
-
-
 }
-.digital h1{
+
+.digital h1 {
     color: #3165b4;
     font-size: 50px;
 }
-.digital p{
+
+.digital p {
     color: gray;
 }
-.button-m-t{
+
+.button-m-t {
     display: flex;
     gap: 3vw;
 }
-.more button{
+
+.more button {
     border-radius: 20px;
     border: none;
     height: 40px;
     width: 150px;
-    background:#ff3946;
+    background: #ff3946;
     color: white;
     font-weight: bold;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-.touch button{
+
+.touch button {
     border: 1px solid white;
     height: 40px;
     width: 150px;
@@ -78,3 +88,57 @@ nav{
     font-weight: bold;
 }
 
+
+/* AHMED's par */
+.sarticle {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+
+/* first section */
+.sarticle .head {
+    width: 250px;
+    line-height: 1.3;
+}
+
+.sarticle .head h2 {
+    font-size: 34px;
+    padding-bottom: 20px;
+}
+
+.sarticle .head button {
+    border: none;
+    background: #ff3946;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 20px;
+}
+
+
+/* second section */
+.sarticle .body {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.sarticle .body div {
+    width: 260px;
+    padding: 35px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 12px 0px;
+}
+
+.sarticle .body div img {
+    width: 50px;
+    padding-bottom: 20px;
+}
+
+.sarticle .body h3 {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
