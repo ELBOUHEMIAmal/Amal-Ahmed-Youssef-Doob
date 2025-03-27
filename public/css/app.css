@@ -5,12 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 nav {
     margin-top: 5vh;
     display: flex;
@@ -233,6 +227,7 @@ button:active {
 }
 
 @media (max-width:767px) {
+
     nav {
         justify-content: space-evenly;
         position: relative;
@@ -272,7 +267,6 @@ button:active {
         display: flex;
         justify-content: space-between;
         width: 100%;
-
     }
 
     .menu-mobile {
@@ -286,6 +280,7 @@ button:active {
         display: block;
         font-size: 30px;
     }
+
 
     #menu-desk:checked+.menu-desk {
         left: 0;
@@ -314,4 +309,71 @@ button:active {
     .img1 img {
         width: 400px;
     }
+    .sarticle{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    .width{
+        padding-left: 50px;
+        display: flex;
+        width: 100%;
+    }
+    .head h2{
+        text-align: center;
+        width: 70vw;
+    }
+    .head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .web img{
+        width: 100px;
+        height: auto;
+    }
+  
+    .web {
+        display: flex;
+        align-items: center; /* Alignement vertical */
+        gap: 15px; /* L'espace bin l'image w texte */
+    }
+    
+   
+    .Graphic h3,
+    .Graphic p {
+        text-align: left;
+    }
+    .sarticle .body div {
+        width: 408px;
+    }
+    .tharticle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tharticle button {
+        margin-left: 20%;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    .inputs input {
+        width: 80%;
+        padding: 10px;
+      }
+    
+    #textarea {
+        width: 80%; 
+        margin-top: 10px;
+        padding: 10px;
+      }
+   
+    
 }
